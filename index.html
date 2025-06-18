@@ -38,16 +38,38 @@
         </div>
         <div class="is-size-6 publication-affiliations" style="margin-bottom:1rem;">
           <p><sup>*</sup>Equal contribution&nbsp;&nbsp;<sup>†</sup>Corresponding author</p>
-          <p>Shanghai Jiao Tong University, niversity of Missouri-Kansas City, Lenovo Group </p>
+          <p>Shanghai Jiao Tong University, University of Missouri-Kansas City, Lenovo Group</p>
         </div>
         <div class="is-size-5" style="margin-bottom:1rem;">
-          ArXiv 2025 
+          ArXiv 2025
         </div>
         <div class="publication-links">
           <a href="https://arxiv.org/pdf/2506.12787.pdf" target="_blank" class="button is-rounded is-dark">Paper</a>
           <a href="https://github.com/Evan-sudo/Swift_WRF" target="_blank" class="button is-rounded is-dark">Code</a>
           <a href="#" class="button is-rounded is-dark">Dataset</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Abstract section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h2 class="title is-4">Abstract</h2>
+      <div class="content">
+        <p>Modeling the wireless radiance field (WRF) is fundamental to modern communication systems, enabling key tasks such as
+localization, sensing, and channel estimation. Traditional approaches, which rely on empirical formulas or physical simulations, often
+suffer from limited accuracy or require strong scene priors. Recent neural radiance field (NeRF)–based methods improve
+reconstruction fidelity through differentiable volumetric rendering, but their reliance on computationally expensive multilayer perceptron
+(MLP) queries hinders real-time deployment. To overcome these challenges, we introduce Gaussian splatting (GS) to the wireless
+domain, leveraging its efficiency in modeling optical radiance fields to enable compact and accurate WRF reconstruction. Specifically,
+we propose SwiftWRF, a deformable 2D Gaussian splatting framework that synthesizes WRF spectra at arbitrary positions under
+single-sided transceiver mobility. SwiftWRF employs CUDA-accelerated rasterization to render spectra at over 100k FPS and uses the
+lightweight MLP to model the deformation of 2D Gaussians, effectively capturing mobility-induced WRF variations. In addition to novel
+spectrum synthesis, the efficacy of SwiftWRF is further underscored in its applications in angle-of-arrival (AoA) and received signal
+strength indicator (RSSI) prediction. Experiments conducted on both real-world and synthetic indoor scenes demonstrate that
+SwiftWRF can reconstruct WRF spectra up to 500x faster than existing state-of-the-art methods, while significantly enhancing its signal
+quality.</p>
       </div>
     </div>
   </section>
