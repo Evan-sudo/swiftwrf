@@ -68,28 +68,29 @@
     <div class="container is-max-desktop">
       <h2 class="title is-4">Abstract</h2>
       <div class="content">
-        <p>Modeling the wireless radiance field (WRF) is fundamental to modern communication systems, enabling key tasks such as
-localization, sensing, and channel estimation. Traditional approaches, which rely on empirical formulas or physical simulations, often
-suffer from limited accuracy or require strong scene priors. Recent neural radiance field (NeRF)–based methods improve
-reconstruction fidelity through differentiable volumetric rendering, but their reliance on computationally expensive multilayer perceptron
-(MLP) queries hinders real-time deployment. To overcome these challenges, we introduce Gaussian splatting (GS) to the wireless
-domain, leveraging its efficiency in modeling optical radiance fields to enable compact and accurate WRF reconstruction. Specifically,
-we propose SwiftWRF, a deformable 2D Gaussian splatting framework that synthesizes WRF spectra at arbitrary positions under
-single-sided transceiver mobility. SwiftWRF employs CUDA-accelerated rasterization to render spectra at over 100k FPS and uses the
-lightweight MLP to model the deformation of 2D Gaussians, effectively capturing mobility-induced WRF variations. In addition to novel
-spectrum synthesis, the efficacy of SwiftWRF is further underscored in its applications in angle-of-arrival (AoA) and received signal
-strength indicator (RSSI) prediction. Experiments conducted on both real-world and synthetic indoor scenes demonstrate that
-SwiftWRF can reconstruct WRF spectra up to 500x faster than existing state-of-the-art methods, while significantly enhancing its signal
-quality.</p>
+        <p>Modeling the wireless radiance field (WRF) is fundamental to modern communication systems, enabling key tasks such as localization, sensing, and channel estimation. Traditional approaches, which rely on empirical formulas or physical simulations, often suffer from limited accuracy or require strong scene priors. Recent neural radiance field (NeRF)–based methods improve reconstruction fidelity through differentiable volumetric rendering, but their reliance on computationally expensive multilayer perceptron (MLP) queries hinders real-time deployment. To overcome these challenges, we introduce Gaussian splatting (GS) to the wireless domain, leveraging its efficiency in modeling optical radiance fields to enable compact and accurate WRF reconstruction. Specifically, we propose SwiftWRF, a deformable 2D Gaussian splatting framework that synthesizes WRF spectra at arbitrary positions under single-sided transceiver mobility. SwiftWRF employs CUDA-accelerated rasterization to render spectra at over 100k FPS and uses the lightweight MLP to model the deformation of 2D Gaussians, effectively capturing mobility-induced WRF variations. In addition to novel spectrum synthesis, the efficacy of SwiftWRF is further underscored in its applications in angle-of-arrival (AoA) and received signal strength indicator (RSSI) prediction. Experiments conducted on both real-world and synthetic indoor scenes demonstrate that SwiftWRF can reconstruct WRF spectra up to 500x faster than existing state-of-the-art methods, while significantly enhancing its signal quality.</p>
       </div>
     </div>
   </section>
 
-  <!-- Static Figures stacked vertically -->
+  <!-- Main Method and Performance Figures -->
   <section class="section">
-    <div class="container has-text-centered">
-      <img src="static/images/a.png" alt="Figure A" style="width:70%; height:auto; margin-bottom:1rem;">
-      <img src="static/images/b.png" alt="Figure B" style="width:70%; height:auto;">
+    <div class="container">
+      <h2 class="title is-4">Main Method</h2>
+      <p>Overview of SwiftWRF. For illustration, we present the operating pipeline for the TX-moving scenario (top). The bottom left depicts the architecture of deformable 2DGS, while the bottom right illustrates the spectrum rasterization process.</p>
+      <div class="has-text-centered">
+        <img src="static/images/a.png" alt="Main Method Overview" style="width:70%; height:auto; margin-bottom:1rem;">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-4">Performance</h2>
+      <p>A few toy examples from the visual comparisons are presented in Fig. 8 to highlight representative qualitative differences across methods. For clarity, we recommend zooming in to better observe reconstruction details. As shown, NeRF2 produces ring-like blurring artifacts that degrade the overall signal spectrum. In contrast, WRF-GS exhibits localized blob-like noise patterns, likely caused by floaters introduced during the training of the 3DGS process. Meanwhile, traditional deep learning-based methods such as VAE and DCGAN yield heavily blurred results with limited structural fidelity.</p>
+      <div class="has-text-centered">
+        <img src="static/images/b.png" alt="Performance Examples" style="width:70%; height:auto;">
+      </div>
     </div>
   </section>
 
