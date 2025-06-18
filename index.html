@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <!-- Social media meta -->
+  <!-- Meta tags for social media banners -->
   <meta name="description" content="Rasterizing Wireless Radiance Field via Deformable 2D Gaussian Splatting">
   <meta property="og:title" content="Rasterizing Wireless Radiance Field via Deformable 2D Gaussian Splatting"/>
   <meta property="og:description" content="Mufan Liu*, Cixiao Zhang*, Qi Yang, Member, IEEE, Yujie Cao, Yiling Xu†, Member, IEEE, Yin Xu†, Senior Member, IEEE, Shu Sun, Senior Member, IEEE, Mingzeng Dai, Yunfeng Guan"/>
@@ -12,7 +12,7 @@
   <meta property="og:image:height" content="630"/>
 
   <meta name="twitter:title" content="Rasterizing Wireless Radiance Field via Deformable 2D Gaussian Splatting">
-  <meta name="twitter:description" content="Mufan Liu*, Cixiao Zhang*, Qi Yang, Member, IEEE, Yujie Cao, Yiling Xu†, Member, IEEE, Yin Xu†, Senior Member, IEEE, Shu Sun, Senior Member, IEEE, Mingzeng Dai, Yunfeng Guan">
+  <meta name="twitter:description" content="Rasterizing Wireless Radiance Field via Deformable 2D Gaussian Splatting">
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,82 +21,47 @@
   <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 </head>
 <body>
 
+  <!-- Header with title, authors, affiliations, arXiv, and links -->
   <section class="hero">
     <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Rasterizing Wireless Radiance Field via<br>Deformable 2D Gaussian Splatting</h1>
-            <div class="is-size-5 publication-authors">
-              Mufan Liu<sup>*</sup>, Cixiao Zhang<sup>*</sup>, Qi Yang, <em>Member, IEEE</em>,<br>
-              Yujie Cao, Yiling Xu<sup>†</sup>, <em>Member, IEEE</em>, Yin Xu<sup>†</sup>, <em>Senior Member, IEEE</em>,<br>
-              Shu Sun, <em>Senior Member, IEEE</em>, Mingzeng Dai, Yunfeng Guan
-            </div>
-            <div class="is-size-5 publication-authors">
-              University of Science and Technology of China<br>
-              ISCAS 2025
-            </div>
-            <div class="publication-links">
-              <a href="https://arxiv.org/pdf/YOUR_PAPER_ID.pdf" target="_blank" class="button is-rounded is-dark">
-                <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                <span>Paper</span>
-              </a>
-              <a href="https://github.com/YOUR_REPO" target="_blank" class="button is-rounded is-dark">
-                <span class="icon"><i class="fab fa-github"></i></span>
-                <span>Code</span>
-              </a>
-              <a href="https://arxiv.org/abs/YOUR_PAPER_ID" target="_blank" class="button is-rounded is-dark">
-                <span class="icon"><i class="ai ai-arxiv"></i></span>
-                <span>arXiv</span>
-              </a>
-            </div>
-          </div>
+      <div class="container is-max-desktop has-text-centered">
+        <h1 class="title is-1 publication-title">
+          Rasterizing Wireless Radiance Field via<br>
+          Deformable 2D Gaussian Splatting
+        </h1>
+        <div class="is-size-5 publication-authors" style="margin-bottom:0.5rem;">
+          Mufan Liu<sup>*</sup>, Cixiao Zhang<sup>*</sup>, Qi Yang, <em>Member, IEEE</em>, Yujie Cao,
+          Yiling Xu<sup>†</sup>, <em>Member, IEEE</em>, Yin Xu<sup>†</sup>, <em>Senior Member, IEEE</em>,
+          Shu Sun, <em>Senior Member, IEEE</em>, Mingzeng Dai, Yunfeng Guan
+        </div>
+        <div class="is-size-6 publication-affiliations" style="margin-bottom:0.75rem;">
+          <ul style="list-style:none; padding:0; margin:0;">
+            <li>M. Liu, C. Zhang, Y. Cao, Y. Xu, Y. Xu, S. Sun and Y. Guan: School of Information Science and Electronic Engineering, Shanghai Jiao Tong University, Shanghai 200240, China (email: {sudo_evan, cixiaozhang, 1452377525, yl.xu, xuyin shusun, yfguan69}@sjtu.edu.cn)</li>
+            <li>Q. Yang: University of Missouri-Kansas City, Kansas 64110, USA (email: qiyang@umkc.edu)</li>
+            <li>M. Dai: Lenovo Group, Lenovo Research, Beijing 2100094, China (email: daimz4@lenovo.com)</li>
+          </ul>
+        </div>
+        <div class="is-size-5" style="margin-bottom:1rem;">
+          arXiv: <a href="https://arxiv.org/abs/2506.12787" target="_blank">2506.12787</a>
+        </div>
+        <div class="publication-links">
+          <a href="https://arxiv.org/pdf/2506.12787.pdf" target="_blank" class="button is-rounded is-dark">Paper</a>
+          <a href="https://github.com/Evan-sudo/Swift_WRF" target="_blank" class="button is-rounded is-dark">Code</a>
+          <a href="#" class="button is-rounded is-dark">Dataset</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Image carousel -->
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="item">
-            <img src="static/images/carousel1.jpg" alt="Result 1"/>
-            <h2 class="subtitle has-text-centered">First image description.</h2>
-          </div>
-          <div class="item">
-            <img src="static/images/carousel2.jpg" alt="Result 2"/>
-            <h2 class="subtitle has-text-centered">Second image description.</h2>
-          </div>
-          <div class="item">
-            <img src="static/images/carousel3.jpg" alt="Result 3"/>
-            <h2 class="subtitle has-text-centered">Third image description.</h2>
-          </div>
-          <div class="item">
-            <img src="static/images/carousel4.jpg" alt="Result 4"/>
-            <h2 class="subtitle has-text-centered">Fourth image description.</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Affiliations and footnotes -->
+  <!-- Static Figures stacked vertically -->
   <section class="section">
-    <div class="container">
-      <ul>
-        <li>M. Liu, C. Zhang, Y. Cao, Y. Xu, Y. Xu, S. Sun and Y. Guan are from School of Information Science and Electronic Engineering, Shanghai Jiao Tong University, Shanghai, 200240, China (email: {sudo_evan, cixiaozhang, 1452377525, yl.xu, xuyin shusun, yfguan69}@sjtu.edu.cn)</li>
-        <li>Q. Yang is with University of Missouri-Kansas City, Kansas, 64110, America (email: qiyang@umkc.edu)</li>
-        <li>M. Dai is with Lenovo Group, Lenovo Research, Beijing, 2100094, China (email: {daimz4}@lenovo.com)</li>
-      </ul>
-      <p><sup>*</sup>Authors contribute equally to this work.<br>
-      <sup>†</sup>Corresponding authors.</p>
+    <div class="container has-text-centered">
+      <img src="static/images/a.png" alt="Figure A" style="width:100%; height:auto; margin-bottom:1rem;">
+      <img src="static/images/b.png" alt="Figure B" style="width:100%; height:auto;">
     </div>
   </section>
 
@@ -116,20 +81,7 @@
     </div>
   </section>
 
-  <!-- Links -->
-  <section class="section">
-    <div class="container">
-      <h2 class="title is-4">Links</h2>
-      <ul>
-        <li>Paper: <a href="https://arxiv.org/abs/2506.12787" target="_blank">https://arxiv.org/abs/2506.12787</a></li>
-        <li>GitHub: <a href="https://github.com/Evan-sudo/Swift_WRF" target="_blank">https://github.com/Evan-sudo/Swift_WRF</a></li>
-        <li>Dataset: </li>
-      </ul>
-    </div>
-  </section>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/index.js"></script>
 </body>
 </html>
